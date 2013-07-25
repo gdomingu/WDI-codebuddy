@@ -1,0 +1,64 @@
+#container>header h1 img{
+  display:none;
+  height:30px;
+  width:50px;
+}
+@media screen and (max-width: 960px){
+
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  #container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #main>#content,
+  #main>#extras {
+    width: 100%;
+    float: none;
+  }
+
+  #main>#content > section > header,
+  #main>#content > section > ul {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  body.active{
+    padding-top: 200px;
+  }
+  body{
+    padding-top: 50px;
+  }
+  #container>header a:link,
+  #container>header a:visited {
+    display: block;
+    width: 100%;
+    float: none;
+  }
+
+  #container>header .tagline{
+    display:none;
+  }
+
+  #container>header {
+    margin-top: 0px;
+    overflow: hidden;
+    text-align: center;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgb(9,24,31);
+  }
+  #container>header h1 img{
+    display:block;
+    height:30px;
+    width:50px;
+  }
+}
